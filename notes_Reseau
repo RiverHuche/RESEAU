@@ -1,0 +1,42 @@
+ID = HOSTIP/NETID et tout cela doit être administrer
+show ip : MAC = adresse 
+
+ping = envoyer donne donnée, et donne diagnostic de réseau
+
+@IP = adresse ip.
+
+icmp_seq = protocole, support du ping, protocole pour la diagnostic de réseau.
+
+la valeur du icmp_seq permet de savoir à quel séquence cela fait référence
+ip 192.168.0.1/24 -> créer une ip.
+
+sauvegarder chaque PC sur gns avant : wr
+
+pour relier 3 machines entre elles : nécessite un équipement servant de liaison commune à tous les pc : un hub
+(concentrateur)
+
+chacun des connexions seront branchés sur des ports du hub 
+
+réseau en étoile avec 3pc et un hub.
+
+il prend ce qu'il y'a su run port et le recopie partout 
+
+le ping = aller retour
+
+donc dans les echanges : on voit l'aller et le retour : reply et request
+
+Qd on fait un ping : 1er msg ICMP echo_request
+2ème : msg ICMP echo reply.
+
+adresse mac = couche liaison 
+Destination et source indique des adresses mac
+
+TTL = Time to Live 
+
+ICMP = Internet Control Message Protocol
+
+ICMP au dessus d'IP donc protocole : entre application et réseau.
+
+Start capture : sur une autre liaison que la ou le ping s'est fait : on capture quand même tous les reply et request.
+
+switch : permet réseau en étoile.
