@@ -40,3 +40,15 @@ ICMP au dessus d'IP donc protocole : entre application et réseau.
 Start capture : sur une autre liaison que la ou le ping s'est fait : on capture quand même tous les reply et request.
 
 switch : permet réseau en étoile.
+
+Switch Start capture : sur une autre liaison que la ou le ping s'est fait : on pas les reply et request.
+
+Le switch garde en mémoire l'adresse MAC du pc et la lie à son port qui est destiné au pc.
+
+Le swtich se sert de l'adress MAC des ports pour faire en sorte que seulement les pc concernés par le transfert recoivent les données.
+
+Le switch n'enregistre pas les adresses IP.
+
+l'adresse MAC fonctionne dans le niveau 2 (couche liaison). 
+
+
