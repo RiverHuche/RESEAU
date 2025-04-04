@@ -47,8 +47,25 @@ Le switch garde en mémoire l'adresse MAC du pc et la lie à son port qui est de
 
 Le swtich se sert de l'adress MAC des ports pour faire en sorte que seulement les pc concernés par le transfert recoivent les données.
 
+
+
 Le switch n'enregistre pas les adresses IP.
 
 l'adresse MAC fonctionne dans le niveau 2 (couche liaison). 
+
+Le switch étbalie un trafic selon entre les pc concernés, à l'inverse des hub.
+
+12 messages : 
+
+2 premiers : Protocole ARP
+
+10 autres : ICMP.
+
+internet : ensemble de réseau connectés entre eux.
+
+le web : application d'internet. exemple : url.
+
+On demande au broadcast qui possède cette l'adresse IP, le pc reconnu transmet sa réponse 
+Ceci sont les 2 messages jaunes en debut de capture.
 
 
