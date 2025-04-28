@@ -111,4 +111,5 @@ contenant l'adresse IP répondra en protocole ARP (style cest moi adrsse IP)
 
 L'ordinateur pourra répondre car dans le message who has, il est communiqué l'adresse MAC de la source (l'émetteur)
 
+dans le cash ARP (la mémoire qui est propre à chaque pc) le récepteur est e 1er à recevoir les informations (lier l'adresse MAC de l'émetteur à l'ip de l'émetteur) le tout aider par le broadcast.
 
