@@ -68,4 +68,47 @@ le web : application d'internet. exemple : url.
 On demande au broadcast qui possède cette l'adresse IP, le pc reconnu transmet sa réponse 
 Ceci sont les 2 messages jaunes en debut de capture.
 
+Adresse mac fixé sur 6 octets, elle est sensé ne jamais changé 
+
+
+TP 2 : 
+
+
+adresse mac PC1 : 00:50:79:66:68:00
+
+ad mac PC 2 : 00:50:79:66:68:01
+
+ad mac : 00:50:79:66:68:02
+
+Protocole : ARP, la source dans le  TP2 est une adresse mac
+
+Quand on déroule ethernet on a 3 champs on a l'EN TÊTE: 
+  Destination : adresse MAC destination
+  source : source 
+  type : sert à savoir cmmnt lire les prochaines données qui vont suivre (protocole de la charge utile (ce qu'on transporte))
+        type tjr représenté par 2 octets ?
+
+On veut communniquer 
+
+ether
+
+On parle de trame Ethernet. C’est la couche la plus englobante. Pour envoyer un message sur
+le réseau local, il est donc nécessaire pour les machines qui souhaitent envoyer un message sur
+le réseau de fabriquer cette couche, et donc de disposer des informations nécessaires, notamment
+l’adresse MAC de la machine de destination.
+Cependant, lorsque vous avez envoyé un ping, vous n’avez pas précisé cette adresse MAC de
+destination, vous avez utilisé l’adresse IP de destination. Comment faire le lien entre cette adresse
+IP et l’adresse MAC ?
+C’est le rôle du protocole ARP (Address Resolution Protocol ) qui a pour but de faire le lien entre
+les adresses IP (couche réseau) et les adresses MAC (couche liaison)
+Soit la définition extraite de la page :
+
+ARP sert à trouver à qui les adresses ip appartiennent en utilisant les Adresses MAC.
+
+le who has est le broadcast de niveau 2 
+tous les ordinateurs du réseau vont recevoir la requête, ainsi ils détermineront s'ils sont visés ou non, et alors  la machine
+contenant l'adresse IP répondra en protocole ARP (style cest moi adrsse IP)
+
+L'ordinateur pourra répondre car dans le message who has, il est communiqué l'adresse MAC de la source (l'émetteur)
+
 
