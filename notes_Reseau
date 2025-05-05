@@ -123,3 +123,8 @@ tp 3
 
 172.230.192.126  (@ip interface e0 et ce n'est pas 172.230.192.127 car cela aurait laissé en host id les bits suivants : 111 1111, ce qui est réservé au broacast
 
+172.230.192.254 pour le 2ème interface du routeur.
+
+netmask pour les 2 : 255.255.255.128
+
+sh ip int br
