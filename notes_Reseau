@@ -145,3 +145,9 @@ timeout apparapit si le pc récepteur n'a pas de passerelle et ne peut pas recev
 
 avant ping, pc1 regarde sa table de routage en premier, ensuite on sait que l apasserelle est sur le mm reseau locale don con a besoin de son adresse mac, regarde si son cache est vide, et s'il est vide il rl
 demande au broadcast who has l'@ IP de l'interface RESEAU 
+
+le routeur regarde pour atteindre sa table de routage pour communiquer avec pc2 et voit que sa passerelle est 
+sur le mm reseau que pc2.
+
+le who has met à jour le cache ARP dans les deux de l'échange et en 1er dans le récepteur car il connitra en premier 
+l'@ mac de l'émetteur.
