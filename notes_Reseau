@@ -133,4 +133,7 @@ avev routeur, PC1 peut pas communiquer avec PC2, mais pc1 pe communiquer avec ro
 
 Les machines qui arrivent à se pinguer sont les machines qui sont sur le même réseau, ce qui compte c'est l'interface.
 
-No gateway found (msg d'erreur) veut dire pas de passerelle trouvé (dans la table de routage).
+No gateway found (msg d'erreur) veut dire pas de passerelle trouvé (dans la table de routage). et que c'est la table de routage du pc qui émet le ping qui est en erreur.
+
+
+
