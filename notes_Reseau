@@ -135,5 +135,8 @@ Les machines qui arrivent à se pinguer sont les machines qui sont sur le même 
 
 No gateway found (msg d'erreur) veut dire pas de passerelle trouvé (dans la table de routage). et que c'est la table de routage du pc qui émet le ping qui est en erreur.
 
+Gateway of last resort is not set =  
 
+3.1 qd on configure un interface, les entrées correspondantes sont automatiquement mises dans la table de routage.
 
+ajouter une passerelle à un pc 1 : 172.230.192.1 255.255.255.128 gateway 172.230.192.126
