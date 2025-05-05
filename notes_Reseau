@@ -128,3 +128,5 @@ tp 3
 netmask pour les 2 : 255.255.255.128
 
 sh ip int br
+
+avev routeur, PC1 peut pas communiquer avec PC2, mais pc1 pe communiquer avec routeur et pc2 aussi.
