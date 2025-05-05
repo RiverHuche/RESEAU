@@ -151,3 +151,9 @@ sur le mm reseau que pc2.
 
 le who has met à jour le cache ARP dans les deux de l'échange et en 1er dans le récepteur car il connitra en premier 
 l'@ mac de l'émetteur.
+
+configure terminal
+interface < nom interface >
+ip address <IP > < mask >
+no shutdown
+end
