@@ -140,3 +140,8 @@ Gateway of last resort is not set =
 3.1 qd on configure un interface, les entrées correspondantes sont automatiquement mises dans la table de routage.
 
 ajouter une passerelle à un pc 1 : 172.230.192.1 255.255.255.128 gateway 172.230.192.126
+
+timeout apparapit si le pc récepteur n'a pas de passerelle et ne peut pas recevoir le message.
+
+avant ping, pc1 regarde sa table de routage en premier, ensuite on sait que l apasserelle est sur le mm reseau locale don con a besoin de son adresse mac, regarde si son cache est vide, et s'il est vide il rl
+demande au broadcast who has l'@ IP de l'interface RESEAU 
