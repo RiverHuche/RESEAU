@@ -157,3 +157,9 @@ interface < nom interface >
 ip address <IP > < mask >
 no shutdown
 end
+
+
+191.160.128.0/24 r1
+191.160.130.0/24 r2
+191.160.131.0/24 r3
+
