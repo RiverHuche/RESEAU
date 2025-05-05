@@ -113,3 +113,13 @@ L'ordinateur pourra répondre car dans le message who has, il est communiqué l'
 
 dans le cash ARP (la mémoire qui est propre à chaque pc) le récepteur est e 1er à recevoir les informations (lier l'adresse MAC de l'émetteur à l'ip de l'émetteur) le tout aider par le broadcast.
 
+On a besoin de l'@ mac pour la tram ethernet (source destination)
+
+
+tp 3 
+
+172.230.192.0/25
+172.230.192.128/25
+
+172.230.192.126  (@ip interface e0 et ce n'est pas 172.230.192.127 car cela aurait laissé en host id les bits suivants : 111 1111, ce qui est réservé au broacast
+
