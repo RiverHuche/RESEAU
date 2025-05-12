@@ -153,7 +153,7 @@ le who has met à jour le cache ARP dans les deux de l'échange et en 1er dans l
 l'@ mac de l'émetteur.
 
 configure terminal
-interface < nom interface >
+interface < nom interface > e0/0
 ip address <IP > < mask >
 no shutdown
 end
@@ -164,9 +164,13 @@ end
 191.160.131.0/24 r3
 
 ip interface r1 : 191.160.128.254
-r2 : 191.160.130.254
-r3 : 191.160.131.254
+r2 : 191.160.129.254
+r3 : 191.160.130.254
 
 une entrée est ajt automatiquement dans la table de routage lorsque que l'on configure l'adresse ip d'une interface, cette entrée dans la table de routage correspond au réseau local.
+
+Pour ajouter une route (statique) sur un routeur la commande est la suivante
+configure terminal
+ip r
 
 
