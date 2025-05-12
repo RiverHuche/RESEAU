@@ -166,3 +166,7 @@ end
 ip interface r1 : 191.160.128.254
 r2 : 191.160.130.254
 r3 : 191.160.131.254
+
+une entrée est ajt automatiquement dans la table de routage lorsque que l'on configure l'adresse ip d'une interface, cette entrée dans la table de routage correspond au réseau local.
+
+
