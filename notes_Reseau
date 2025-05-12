@@ -170,7 +170,14 @@ r3 : 191.160.130.254
 une entrée est ajt automatiquement dans la table de routage lorsque que l'on configure l'adresse ip d'une interface, cette entrée dans la table de routage correspond au réseau local.
 
 Pour ajouter une route (statique) sur un routeur la commande est la suivante
+
 configure terminal
-ip r
+ip route < adresse_reseau_destination > < netmask > < adresse_passerelle >
 
+4.3 on arrive à communiquer avec seulement les machines présentes sur le réseau.
 
+AJouter une passerelle à un pc : "ip pc/mask ip_passerelle (interface du routeur sur le même réseau que le pc)
+
+exemple : ip 191.160.128.1/24 191.160.128.254
+
+191.160.128.254  Destination host unreachable 
