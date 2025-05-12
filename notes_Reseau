@@ -189,5 +189,5 @@ solution : ajouter une route :
     ip route < adresse_reseau_destination > < netmask > < adresse_passerelle >
     end
 
-ip route 191.160.130.0 255.255.255.0 191.160.129.253
+ip route 191.160.130.0 255.255.255.0 191.160.129.253  le icmp request fonctionne, le pc récepteur peut envoyer le icmp reply au routeur, mais le routeur r2 regarde dans sa table de routage et lui n'a pas de passerelle pour le routeur r1. donc msg d'erreur : timeout.
 
