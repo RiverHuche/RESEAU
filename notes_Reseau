@@ -246,6 +246,11 @@ couche lors d'un DHCP : Ethernet
                         Dynamic host configuration
 
 
+en dhcp on ne maitrise pas l'attribution d'une adresse ip, les pc lamdba on les mets ne dynamique, les ip routeurs (interface) on les met en statique
+
+show ip dhcp binding: sert à montrer les bails (baux)
+
+
 
 
 
