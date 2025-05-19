@@ -254,6 +254,11 @@ show ip dhcp binding: sert à montrer les bails (baux)
 
 DDD = 4 discover et n'a pas trouvé de serveur.
 
+adresse static : donne nous même
+adresse dynamique : donner par programme
+
+le MAC permet de reconnaitre tout type de machine pour prédéfinir une adrese ip dans le dhcp (exemple imprimante)
+
 
 
 
