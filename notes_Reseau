@@ -228,6 +228,18 @@ adresses proposées redeviennent disponibles.
 e serveur DHCP accuse réception de la demande et accorde l’adresse en bail (DHCPACK),
 les autres serveurs retirent leur proposition
 
+service dhcp
+ip dhcp pool lana
+network <addresse réseau> <netMasque>
+
+lease 0 0 30 = 30 minutes = cmb de temps le pc a le droit d'utiliser cette config réseau.
+
+default-router <ip interface du mm réseau>
+
+ip dhcp excluded-address 192.168.0.1 192.168.0.10 (exclu d'adresse entre 1 et 10)
+
+
+
 
 
 
