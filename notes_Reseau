@@ -181,7 +181,7 @@ AJouter une passerelle à un pc : "ip pc/mask ip_passerelle (interface du routeu
 exemple : ip 191.160.128.1/24 191.160.128.254
 
 191.160.128.254  Destination host unreachable : il a pas l'adresse MAC du routeur (destination ici est le routeur (dan sla trame ethernet source destination)) 
-après avoir fait les arp et peut enfin regarder la table de routage pour regarder si l'ip du ping est présent, ici il n'est pas dans sa table de routage donc : msg d'erreur
+après avoir fait les arp et peut enfin regarder la table de routage pour regarder si l'ip du ping est présent, ici il n'est pas dans sa table de routage donc : msg d'erreur (peut pas joindre l'adresse)
 
 solution : ajouter une route : 
 
