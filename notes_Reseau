@@ -202,8 +202,35 @@ TP4
 Dynamic host configuration protocol
 
 
-client demande une adresse et serveur lui en donne.
+client demande une adresse et serveur lui en donne. 
 
-On donne une adresse ip ponctuelle.
+On donne une adresse ip ponctuelle. (bail ip)
 
 Adresse IP Dynamique (adresse attribué par un serveur):  Rejoindre un réseau automatique, chez nous où à l'iut.
+
+e client émet un message de demande de bail IP (DHCPDISCOVER) qui est envoyé sous
+forme d’une diffusion sur le réseau avec adresse IP source 0.0.0.0 et adresse IP destination
+255.255.255.255
+
+car le client ne connait aucun réseau donc il envoie au broadcast le plus général.
+
+Les serveurs DHCP répondent en proposant une adresse IP avec une durée de bail et l’adresse
+IP du serveur DHCP (DHCPOFFER) dhcp répond en utilisant l'adresse MAC du client (serveur dhcp forcément sur réseau local).
+
+
+
+Le client sélectionne la première adresse IP (s’il y a plusieurs serveurs DHCP) reçue et
+envoie une demande d’utilisation de cette adresse au serveur DHCP (DHCPREQUEST).
+Son message envoyé par diffusion comporte l’identification du serveur sélectionné qui est
+informé que son offre a été retenue ; tous les autres serveurs DHCP retirent leur offre et les
+adresses proposées redeviennent disponibles.
+
+e serveur DHCP accuse réception de la demande et accorde l’adresse en bail (DHCPACK),
+les autres serveurs retirent leur proposition
+
+
+
+
+
+
+
