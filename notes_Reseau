@@ -238,6 +238,12 @@ default-router <ip interface du mm réseau>
 
 ip dhcp excluded-address 192.168.0.1 192.168.0.10 (exclu d'adresse entre 1 et 10)
 
+sur machine, pour voir si l'exclu d'adresse a fonctionné : dhcp.
+
+couche lors d'un DHCP : Ethernet
+                        Internet Protocol Version
+                        User Datagram Protocol UDR
+                        Dynamic host configuration
 
 
 
