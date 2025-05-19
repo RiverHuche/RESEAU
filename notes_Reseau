@@ -238,6 +238,8 @@ default-router <ip interface du mm réseau>
 
 ip dhcp excluded-address 192.168.0.1 192.168.0.10 (exclu d'adresse entre 1 et 10)
 
+dhcp (sur machine pour vérifier si il recoit bien la premier ip apres celles exclus).
+
 sur machine, pour voir si l'exclu d'adresse a fonctionné : dhcp.
 
 couche lors d'un DHCP : Ethernet
@@ -250,7 +252,7 @@ en dhcp on ne maitrise pas l'attribution d'une adresse ip, les pc lamdba on les 
 
 show ip dhcp binding: sert à montrer les bails (baux)
 
-
+DDD = 4 discover et n'a pas trouvé de serveur.
 
 
 
