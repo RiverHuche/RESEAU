@@ -210,7 +210,11 @@ Adresse IP Dynamique (adresse attribué par un serveur):  Rejoindre un réseau a
 
 e client émet un message de demande de bail IP (DHCPDISCOVER) qui est envoyé sous
 forme d’une diffusion sur le réseau avec adresse IP source 0.0.0.0 et adresse IP destination
-255.255.255.255
+255.255.255.255 (ce broadcats car on connait pas les reseaux)
+
+les routeurs et serv ne sont pas ne dhcp.
+
+
 
 car le client ne connait aucun réseau donc il envoie au broadcast le plus général.
 
