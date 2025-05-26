@@ -259,9 +259,27 @@ adresse dynamique : donner par programme
 
 le MAC permet de reconnaitre tout type de machine pour prédéfinir une adrese ip dans le dhcp (exemple imprimante)
 
+sho
 
 
+5.4 Pourquoi pc4 ne pourra-t-il pas obtenir d’adresse de part du serveur dhcp sur r1 ?
+On pourrait ajouter un serveur dhcp sur r2, mais nous allons plutôt continuer d’utiliser r1. Pour
+cela, le routeur r2 jouera le rôle de relai dhcp : il relaie les demandes dhcp de la part des machines
+de son réseau, et transmet la réponse au serveur dhcp.
+Nous allons tout d’abord rajouter ce nouveau pool d’adresse sur notre serveur dhcp, r1.
+IUT Orléans 3/5
+Réseau 1A TP
+R1 # configure terminal
+R1 ( config ) # ip dhcp pool lanc
+R1 ( dhcp - config ) # network 10.0.0.0 255.255.255.0
+R1 ( dhcp - config ) # default - router 10.0.0.1
+R1 ( dhcp - config ) # en
 
+On configure le serveur relai sur R2
+R2 # configure terminal
+R2 ( config ) # interface e0 /1  (celui qui ecoute les requetes dhcp de la machine (donc ds le meme reseau)
+R2 ( config - i f ) # ip helper - address < adresse du IP serveur dhcp >  (l'interface qui sera sur le réseau dhcp et qui sera  du bon coté)
+R2 ( config - i f ) # end
 
 
 
