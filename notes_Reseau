@@ -289,3 +289,5 @@ R2 ( config - i f ) # end
 
 faire le rip permet de ne plus faire de route
 
+metric = saut
+
