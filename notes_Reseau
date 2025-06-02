@@ -339,6 +339,25 @@ R2 ( config - i f ) # no ip access - group monACL in
 
 show ip int (voir détails de l'interface)
 
+Avec les ACL étendue, il est possible d’écrire des règles plus précises. Le format d’une ACL étendue
+est le suivant :
+Action Protocole IPsource [ port source ] IPdest [ port dest ] [ options ]
+• Action : permit ou deny
+• Protocole : icmp, tcp, udp, . . .
+• IP : Adresse réseau + masque inversé, ou host+adresse interface, ou any
+• port : opérateur numéro de port. Les opérateurs sont les suivants :
+– eq : égal
+– neq : différent
+– gt : plus grand que
+– lt : plus petit que
+Nous allons appliquer un filtrage, mais cette fois uniquement sur le protocole ICMP.
+R2 ( config ) # ip access - list extended monACLetendue
+R2 ( config - ext - nacl ) # permit icmp 192.168.0.0 0.0.0.255 10.0.0.0 0.0.0.255
+R2 ( config - ext - nacl ) # deny icmp 192.168.1.0 0.0.0.255 10.0.0.0 0.0.0.255
+R2 ( config - ext - nacl ) # permit ip any any
+R2 ( config - ext - nacl ) # end
+
+ici on autorise/interdit les ip source ou destination, pour cela qu'on fait any any
 
 
 
