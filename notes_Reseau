@@ -291,3 +291,24 @@ faire le rip permet de ne plus faire de route
 
 metric = saut
 
+Pare-feu (le tout se situe dans la couche Application).
+Permet d'autoriser ou interdire trafic venant de tel ou tel réseau.
+
+activer un pare-feu : 
+
+Nous allons activer le pare-feu sur le routeur R2
+  R2(config)# ip access-list standard monACL
+  
+On nomme notre ensemble de règles
+  R2(config-std-nacl)# permit 192.168.0.0 0.0.0.255
+On autorise (permit) tout le trafic en provenance du réseau 192.168.0.0/24. Noter ici que le masque
+est inversé.
+
+R2 ( config - std - nacl ) # deny 192.168.1.0 0.0.0.255
+  On bloque (deny) tout le trafic en provenance du réseau 192.168.1.0/24.
+R2 (config-std-nacl) # permit any
+R2 (config-std-nacl) # end
+
+
+
+
