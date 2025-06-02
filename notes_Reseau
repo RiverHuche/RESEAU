@@ -331,6 +331,12 @@ quand on a un timeout sur l'émetteur, alors il faut tester le ping dans l'autre
 
 pour comprendre que certains ping fonctionnent bien qu'il y ait un pare-feu, le routeur doit regarder les adresses source de la tram ethernet.
 
+trace 
+
+Pour désactiver une ACL il suffit de saisir la commande suivante
+R2 ( config ) # interface e0 /0
+R2 ( config - i f ) # no ip access - group monACL in
+
 
 
 
