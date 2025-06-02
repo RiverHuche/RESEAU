@@ -337,6 +337,8 @@ Pour désactiver une ACL il suffit de saisir la commande suivante
 R2 ( config ) # interface e0 /0
 R2 ( config - i f ) # no ip access - group monACL in
 
+show ip int (voir détails de l'interface)
+
 
 
 
