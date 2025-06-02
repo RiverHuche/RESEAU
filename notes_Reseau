@@ -327,6 +327,10 @@ on peut le faire aussi en sortie.(ca revient au même)
 
 Communication administratively prohibited) : msg d'erreur qui indique que le parefeu fonctionne.
 
+quand on a un timeout sur l'émetteur, alors il faut tester le ping dans l'autre sens (échanger d'émetteur)
+
+pour comprendre que certains ping fonctionnent bien qu'il y ait un pare-feu, le routeur doit regarder les adresses source de la tram ethernet.
+
 
 
 
