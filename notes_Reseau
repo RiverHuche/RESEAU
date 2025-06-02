@@ -379,3 +379,5 @@ R2 ( config ) # ip access - list extended monACLetendue
 R2 ( config - ext - nacl ) # no 20
 R2 ( config - ext - nacl ) # 20 deny icmp host 192.168.1.2 10.0.0.0 0.0.0.255
 R2 ( config - ext - nacl ) # end
+
+le pc qui ne peut pas recevoir de icmp a cause du pare-feu, peut faire un dhcp (dynamique) car cela n'utilise pas de icmp.
