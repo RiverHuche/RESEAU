@@ -1,0 +1,22 @@
+Jun 02 13:34:11.629 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Jun 02 13:34:11.629 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50859.
+Jun 02 13:34:11.636 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 02 13:34:11.638 HYPERVISOR: exec_cmd: hypervisor working_dir /home/iut45/Etudiants/o22401087/GNS3/projects/TP44/project-files/dynamips 
+Jun 02 13:34:11.638 GENERAL: working_dir=/home/iut45/Etudiants/o22401087/GNS3/projects/TP44/project-files/dynamips
+Jun 02 13:34:11.638 HYPERVISOR: exec_cmd: ethsw create Switch1 
+Jun 02 13:34:11.821 HYPERVISOR: exec_cmd: nio create_udp udp-b7976f30-f81c-453e-9f69-c4c9bbe5d7ba 10001 127.0.0.1 10000 
+Jun 02 13:34:11.821 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-b7976f30-f81c-453e-9f69-c4c9bbe5d7ba 
+Jun 02 13:34:11.828 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-b7976f30-f81c-453e-9f69-c4c9bbe5d7ba 1 
+Jun 02 13:34:11.871 HYPERVISOR: exec_cmd: nio create_udp udp-3afd7565-a99d-415a-82aa-91793407452e 10002 127.0.0.1 10003 
+Jun 02 13:34:11.871 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-3afd7565-a99d-415a-82aa-91793407452e 
+Jun 02 13:34:11.888 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-3afd7565-a99d-415a-82aa-91793407452e 1 
+Jun 02 13:34:12.209 HYPERVISOR: exec_cmd: nio create_udp udp-44d74f8d-f73b-40c5-a5ab-29fef8b2bd63 10005 127.0.0.1 10004 
+Jun 02 13:34:12.209 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-44d74f8d-f73b-40c5-a5ab-29fef8b2bd63 
+Jun 02 13:34:12.231 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-44d74f8d-f73b-40c5-a5ab-29fef8b2bd63 1 
+Jun 02 13:34:12.501 HYPERVISOR: exec_cmd: nio create_udp udp-f06abd46-6e8f-4c72-97a4-2068b3496b40 10015 127.0.0.1 10014 
+Jun 02 13:34:12.501 HYPERVISOR: exec_cmd: ethsw add_nio Switch1 udp-f06abd46-6e8f-4c72-97a4-2068b3496b40 
+Jun 02 13:34:12.511 HYPERVISOR: exec_cmd: ethsw set_access_port Switch1 udp-f06abd46-6e8f-4c72-97a4-2068b3496b40 1 
+Jun 02 15:01:38.340 HYPERVISOR: exec_cmd: ethsw delete Switch1 
+Jun 02 15:01:38.407 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 02 15:01:38.902 HYPERVISOR: Stopped.
+Jun 02 15:01:38.902 GENERAL: reset done.
