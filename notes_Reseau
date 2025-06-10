@@ -383,3 +383,25 @@ R2 ( config - ext - nacl ) # end
 le pc qui ne peut pas recevoir de icmp a cause du pare-feu, peut faire un dhcp (dynamique) car cela n'utilise pas de icmp.
 
 on peut bloquer les dhcp, avec cette ligne deny udp host etc...
+
+
+Nous allons activer le routage dynamique. Nous allons débuter sur le routeur A
+ RIP est un protocole de routage qui permet de communiquer aux autres routeurs, la distance qui
+ le sépare des autres réseaux. Cette distance se mesure en nombre de sauts.
+ On active tout d’abord le routage rip en version 2, puis on décide les réseaux que l’on souhaite
+ propager
+ R1#configure terminal
+ R1(config)#router rip
+ R1(config-router)#version 2
+ R1(config-router)#no auto-summary
+ R1(config-router)#network 192.168.0.0
+ R1(config-router)#network 192.168.0.64
+
+Vous pouvez consulter les messages transmis dans ce protocole, en entrant la commande
+ R1#debug ip rip
+ IUT Orléans
+ 1/3
+Réseau 1A
+ TP
+ Pour le désactiver
+ undebug ip rip
